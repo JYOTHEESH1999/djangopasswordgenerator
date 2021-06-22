@@ -1,0 +1,32 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<div style="height:100vh;" class="bg-warning text-center p-5 container-fluid d-flex flex-column">
+<h1 class="h1 text-success p-3">Password generator</h1>
+<form class="form" action="/password">
+    <select name="length">
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10" selected="selected">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    </select><br>
+    <input class="p-2 m-2" type="checkbox" name="caps"> Capitals<br>
+    <input class="p-2 m-2" type="checkbox" name="special"> Special characters<br>
+    <input class="p-2 m-2" type="checkbox" name="numbers"> Numbers<br><br><br>
+    <input type="submit" value="Generate Password" class="btn btn-primary">
+</form>
+<br>
+<br>
+<br>
+    <div>
+<a class="btn btn-danger" href="{% url 'about' %}">Know about this application</a>
+    </div>
+</div>
